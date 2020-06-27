@@ -2,7 +2,7 @@
 
 # ~/.macos — https://mths.be/macos
 
-COMPUTER_NAME="Sri-mac9"
+COMPUTER_NAME="sri-mac"
 
 # Close any open System Preferences panes, to prevent them from overriding
 # settings we’re about to change

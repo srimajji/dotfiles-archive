@@ -11,11 +11,18 @@ PATH="$DOTFILES_DIR/bin:$PATH"
 
 if is-executable git -a -d "$DOTFILES_DIR/.git"; then git --work-tree="$DOTFILES_DIR" --git-dir="$DOTFILES_DIR/.git" pull origin master; fi
 
-ln -sfv "$DOTFILES_DIR/zsh/.zshrc" ~
-ln -sfv "$DOTFILES_DIR/git/.gitconfig" ~
-ln -sfv "$DOTFILES_DIR/git/.gitignore" ~
-ln -sfv "$DOTFILES_DIR/git/.gitignore_global" ~
-ln -sfv "$DOTFILES_DIR/git/.gitattributes" ~
+ln -sfv "$DOTFILES_DIR/.zshrc" ~
+
+# Install homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+
+# Install vim plugin manager
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+# Install sdk man
+curl -s "https://get.sdkman.io" | bash
+source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 if [ -d "$DOTFILES_EXTRA_DIR" -a -f "$DOTFILES_EXTRA_DIR/install.sh" ]; then
   . "$DOTFILES_EXTRA_DIR/install.sh"
