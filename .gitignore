@@ -2,26 +2,13 @@ logs/
 out/
 node_modules/
 npm-debug.log.*
-grails-app/assets/javascripts/build/
-target/
-web-app/flux-compiled/
-web-app/widgets/rtm/embed.js
-web-app/widgets/rtm/embed.js.map
-assets/javascripts/widgets/rtm/embed.js
 coverage/
 *.classpath
 *.project
 *.log
 .idea/
-insidr-grailsPlugins.iml
-insidr.iml
-oauth-inplacePlugin.iml
 .slcache/
 .DS_Store
-grails-app/assets/javascripts/src/test/__window.sessionStorage
-grails-app/assets/javascripts/src/test/__window.localStorage
-web-app/webpack-assets.json
 *.override.yml
 *.iml
 
-web-app/WidgetTester.html
