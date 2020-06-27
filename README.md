@@ -8,6 +8,6 @@ Automate installation
 
 ## Inspiration
 
-[JessFraz dotfiles](https://github.com/jessfraz/dotfiles)
-[Mathias Bynens dotfiles](https://github.com/mathiasbynens/dotfiles)
-[Webpro dotfiles](https://github.com/webpro/dotfiles)
+* [JessFraz dotfiles](https://github.com/jessfraz/dotfiles)
+* [Mathias Bynens dotfiles](https://github.com/mathiasbynens/dotfiles)
+* [Webpro dotfiles](https://github.com/webpro/dotfiles)
