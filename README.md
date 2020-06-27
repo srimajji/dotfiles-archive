@@ -1,6 +1,6 @@
 # Sri's dotfiles
 
-![Screenshot of my terminal](https://imgur.com/UGAy7zc)
+![Screenshot of my terminal](https://i.imgur.com/UGAy7zc.png)
 
 ## TODO
 
