@@ -1,29 +1,27 @@
-#!/usr/bin/env bash
-# https://github.com/webpro/dotfiles/blob/master/install.sh
+#!/usr/bin/env zsh
 
-# Get current dir
-DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-DOTFILES_CACHE="$DOTFILES_DIR/.cache.sh"
-DOTFILES_EXTRA_DIR="$HOME/.extra"
+cd "$(dirname "${BASH_SOURCE}")";
 
-# Make utilities available
-PATH="$DOTFILES_DIR/bin:$PATH"
+function doIt() {
+	rsync --exclude ".git/" \
+		--exclude ".DS_Store" \
+		--exclude "install.sh" \
+		--exclude "brew.sh" \
+		--exclude "dock.sh" \
+		--exclude "defaults.sh" \
+		--exclude "README.md" \
+		--exclude "LICENSE-MIT.txt" \
+		-avh --no-perms . ~;
+	source ~/.zshenv;
+}
 
-if is-executable git -a -d "$DOTFILES_DIR/.git"; then git --work-tree="$DOTFILES_DIR" --git-dir="$DOTFILES_DIR/.git" pull origin master; fi
-
-ln -sfv "$DOTFILES_DIR/.zshrc" ~
-
-# Install homebrew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-
-# Install vim plugin manager
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-
-# Install sdk man
-curl -s "https://get.sdkman.io" | bash
-source "$HOME/.sdkman/bin/sdkman-init.sh"
-
-if [ -d "$DOTFILES_EXTRA_DIR" -a -f "$DOTFILES_EXTRA_DIR/install.sh" ]; then
-  . "$DOTFILES_EXTRA_DIR/install.sh"
-fi
+if [ "$1" == "--force" -o "$1" == "-f" ]; then
+	doIt;
+else
+	read -p "This may overwrite existing files in your home directory. Are you sure? (y/n) " -n 1;
+	echo "";
+	if [[ $REPLY =~ ^[Yy]$ ]]; then
+		doIt;
+	fi;
+fi;
+unset doIt;

@@ -1,0 +1,7 @@
+
+#!/usr/bin/env zsh
+
+export PATH="/usr/local/opt/openssl@1.1/bin:$PATH";
+
+# home brew
+export PATH="/usr/local/sbin:$PATH"
