@@ -26,7 +26,6 @@ brew tap flschweiger/flutter
 brew install grep
 brew install openssh
 brew install cmake
-brew install gh
 
 # Install custom tools
 brew install git
@@ -34,32 +33,36 @@ brew install fastlane
 brew install zsh-syntax-highlighting
 
 # Install languages
-brew install python
-brew install nvm
+brew install pyenv
+brew install n
 
-# Install applications
-brew cask install nvim
+# Install dev tools
+brew install gh
 brew cask install iterm2-nightly
 brew cask install 1password
 brew cask install alfred
 brew cask install notion
-brew cask install firefox-developer-edition
-brew cask install microsoft-edge-dev
-brew cask install geekbench
-brew cask install postman
-brew cask install setapp
-brew cask install spotify
-brew cask install twitch
 brew cask install visual-studio-code-insiders
-brew cask install logitech-options
-brew cask install microsoft-teams
-brew cask install microsoft-outlook
-
-# Install dev tools
+brew cask install firefox-developer-edition
 brew cask install android-studio
 brew cask install drawio
 brew cask install flutter
 brew cask install docker
+
+# Microsoft applications
+brew cask install microsoft-edge-dev
+brew cask install microsoft-teams
+brew cask install microsoft-outlook
+
+# Fun applications
+brew cask install geekbench
+brew cask install postman
+brew cask install spotify
+brew cask install twitch
+
+# Install fonts
+brew cask install font-jetbrains-mono
+brew cask install menlo-for-powerline
 
 
 # Cleanup

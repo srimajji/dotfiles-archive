@@ -5,8 +5,10 @@ export EDITOR='nvim';
 
 # Enable persistent REPL history for `node`.
 export NODE_REPL_HISTORY=~/.node_history;
+
 # Allow 32³ entries; the default is 1000.
 export NODE_REPL_HISTORY_SIZE='32768';
+
 # Use sloppy mode by default, matching web browsers.
 export NODE_REPL_MODE='sloppy';
 
@@ -41,3 +43,19 @@ export ANDROID_HOME="~/.sdkman/candidates/android/sdk"
 # Set AWS profile
 export AWS_DEFAULT_PROFILE=sandbox
 export AWS_PROFILE=sandbox
+
+# Export homebrew ruby
+export LDFLAGS="${LDFLAGS} -L/usr/local/opt/ruby/lib"
+export CPPFLAGS="${LDFLAGS} -I/usr/local/opt/ruby/include"
+
+# Export python libraries
+# export SYSTEM_VERSION_COMPAT=1
+# export LDFLAGS="${LDFLAGS} -L/usr/local/opt/zlib/lib"
+# export CPPFLAGS="${CPPFLAGS} -I/usr/local/opt/zlib/include"
+# export LDFLAGS="${LDFLAGS} -L/usr/local/opt/sqlite/lib"
+# export CPPFLAGS="${CPPFLAGS} -I/usr/local/opt/sqlite/include"
+# export LDFLAGS="${LDFLAGS} -L/usr/local/opt/zlib/lib"
+# export CPPFLAGS="${LDFLAGS} -I/usr/local/opt/zlib/include"
+# export PKG_CONFIG_PATH="/usr/local/opt/zlib/lib/pkgconfig"
+# export PKG_CONFIG_PATH="${PKG_CONFIG_PATH} /usr/local/opt/zlib/lib/pkgconfig"
+# export PKG_CONFIG_PATH="${PKG_CONFIG_PATH} /usr/local/opt/sqlite/lib/pkgconfig"
