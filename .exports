@@ -45,8 +45,8 @@ export AWS_DEFAULT_PROFILE=sandbox
 export AWS_PROFILE=sandbox
 
 # Export homebrew ruby
-export LDFLAGS="${LDFLAGS} -L/usr/local/opt/ruby/lib"
-export CPPFLAGS="${LDFLAGS} -I/usr/local/opt/ruby/include"
+# export LDFLAGS="${LDFLAGS} -L/usr/local/opt/ruby/lib"
+# export CPPFLAGS="${LDFLAGS} -I/usr/local/opt/ruby/include"
 
 # Export python libraries
 # export SYSTEM_VERSION_COMPAT=1
@@ -59,3 +59,7 @@ export CPPFLAGS="${LDFLAGS} -I/usr/local/opt/ruby/include"
 # export PKG_CONFIG_PATH="/usr/local/opt/zlib/lib/pkgconfig"
 # export PKG_CONFIG_PATH="${PKG_CONFIG_PATH} /usr/local/opt/zlib/lib/pkgconfig"
 # export PKG_CONFIG_PATH="${PKG_CONFIG_PATH} /usr/local/opt/sqlite/lib/pkgconfig"
+
+# Zephy toolchain
+export ZEPHYR_TOOLCHAIN_VARIANT=gnuarmemb
+export GNUARMEMB_TOOLCHAIN_PATH="/Users/sri/Documents/work/iot/nordic/gurarmemb"

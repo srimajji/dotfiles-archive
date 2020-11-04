@@ -19,3 +19,8 @@ export PATH="/Applications/Visual Studio Code - Insiders.app/Contents/Resources/
 # ESP-IDF tools
 export PATH="/Users/sri/Documents/work/iot/esp-idf/bin:$PATH";
 
+# Nordic binaries
+export PATH="/Users/sri/.local/bin:$PATH";
+
+# Flutter global packages
+export PATH="/usr/local/Caskroom/flutter/1.22.0/flutter/.pub-cache/bin:$PATH";
