@@ -170,3 +170,5 @@
 	insteadOf = "gist:"
 [credential]
 	helper = osxkeychain
+[init]
+	defaultBranch = main

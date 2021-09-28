@@ -50,3 +50,15 @@ endif
 
 " Check to see what files git is ignoring
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+
+" Space as leader
+nnoremap <SPACE> <Nop>
+let mapleader=" "
+
+" Nerd tree like settins
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+let g:netrw_browse_split = 4
+let g:netrw_altv = 1
+let g:netrw_winsize = 25
+

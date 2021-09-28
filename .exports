@@ -44,6 +44,14 @@ export ANDROID_HOME="~/.sdkman/candidates/android/sdk"
 export AWS_DEFAULT_PROFILE=sandbox
 export AWS_PROFILE=sandbox
 
+# Set golang
+# https://github.com/stefanmaric/g
+export GOROOT=~/.go
+export GOPATH=~/Documents/golang
+
+# Flutter
+export CHROME_EXECUTABLE="/Applications/Microsoft Edge Dev.app/Contents/MacOS/Microsoft Edge Dev"
+
 # Export homebrew ruby
 # export LDFLAGS="${LDFLAGS} -L/usr/local/opt/ruby/lib"
 # export CPPFLAGS="${LDFLAGS} -I/usr/local/opt/ruby/include"
@@ -63,3 +71,16 @@ export AWS_PROFILE=sandbox
 # Zephy toolchain
 export ZEPHYR_TOOLCHAIN_VARIANT=gnuarmemb
 export GNUARMEMB_TOOLCHAIN_PATH="/Users/sri/Documents/work/iot/nordic/gurarmemb"
+
+# Modabble SDK
+export MODDABLE="/Users/sri/Documents/work/iot/moddable"
+export PATH="${MODDABLE}/build/bin/mac/release:$PATH"
+
+# ESP SDK
+export IDF_PATH="/Users/sri/Documents/work/iot/esp-idf"
+export PATH="${MODDABLE}/build/bin/mac/release:$PATH"
+export IDF_PATH=/Users/sri/Documents/work/iot/esp-idf
+export IDF_PYTHON_ENV_PATH=/Users/sri/.espressif/python_env/idf4.2_py3.8_env
+export IDF_TOOLS_EXPORT_CMD=/Users/sri/Documents/work/iot/esp-idf/export.sh
+export IDF_TOOLS_INSTALL_CMD=/Users/sri/Documents/work/iot/esp-idf/install.sh
+
